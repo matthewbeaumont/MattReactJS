@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<head>
+  <link rel="stylesheet" href="javascripttests.css" />
+  <title>Javascript Tests</title>
+</head>
+<body>
+  <h1>Javascript tests</h1>
+  <p>This website is for testing Javascript.</p>
+
+  <h2>JavaScript contained in the HTML document</h2>
+  <p id="javascriptindoc">Text before</p>
+  <button type="button" onclick="function1()">Click to make text appear</button>
+  <script>
+    function function1() {
+      document.getElementById("javascriptindoc").innerHTML =
+        "Paragraph has been changed by the Javascript";
+    }
+  </script>
+
+  <h2>JavaScript contained in the an an external Javascript document</h2>
+  <p id="external">Text before</p>
+  <button type="button" onclick="function2()">Click to make text appear</button>
+  <footer>
+    <script src="Javascript/javascript1.js" ;></script>
+  </footer>
+</body>
