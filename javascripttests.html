@@ -16,11 +16,23 @@
         "Paragraph has been changed by the Javascript";
     }
   </script>
+  <!-- The button has an onclick attribute of "function1()". This causes  -->
 
   <h2>JavaScript contained in the an an external Javascript document</h2>
   <p id="external">Text before</p>
   <button type="button" onclick="function2()">Click to make text appear</button>
+
+  <h2>Different Javascript outputs</h2>
+  <ol>
+    <li>Write into an HTML element.</li>
+    <li>Write into the HTML output.</li>
+    <li>write into an alert box.</li>
+    <button type="buton" onclick="function3()"></button>
+    <li>Write into the browser console.</li>
+  </ol>
   <footer>
     <script src="Javascript/javascript1.js" ;></script>
+    <!-- The filepath is foldername forward slash file name. If the foler was one level back I would need to write ../ before the folder name and repeat that for every level back I need to go. -->
+    <!-- The benefit of having the script in the footer is that it is the last thing to load and Javascript can slow down load times.  -->
   </footer>
 </body>
