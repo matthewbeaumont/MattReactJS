@@ -21,15 +21,34 @@
   <h2>JavaScript contained in the an an external Javascript document</h2>
   <p id="external">Text before</p>
   <button type="button" onclick="function2()">Click to make text appear</button>
-
+  <pre>
+  &lt;script src="Javascript/javascript1.js";&gt;&lt;/script&gt; 
+  </pre>
+  <p>The above code is a script that imports the javascript1.js file</p>
+  <p>
+    Inside the javascript1.js file is a function (in this case "function2").
+  </p>
+  <p>
+    The button has an "onclick" event whereby it runs function2 when clicked.
+  </p>
+  <pre>
+    function function2() {
+      document.getElementById("external").innerHTML="Paragraph has been changed by the external Javascript";}
+  </pre>
   <h2>Different Javascript outputs</h2>
   <ol>
     <li>Write into an HTML element.</li>
     <li>Write into the HTML output.</li>
     <li>write into an alert box.</li>
-    <button type="buton" onclick="function3()"></button>
+    <button type="buton" onclick="function3()">click me</button>
     <li>Write into the browser console.</li>
+    <p>
+      Open the developer tools in the browser to see a message "hello world" in
+      the Console section of the tools. This message is added by Javascript.
+      console.log ("hello world")
+    </p>
   </ol>
+
   <footer>
     <script src="Javascript/javascript1.js" ;></script>
     <!-- The filepath is foldername forward slash file name. If the foler was one level back I would need to write ../ before the folder name and repeat that for every level back I need to go. -->
