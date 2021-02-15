@@ -40,7 +40,7 @@ console.log(reactions);
 // Data Types
 // String. Note that string variables are contained within quotation marks and it could be double or single parenthses. 
 const name = "John";
-const surname = 'Smith';
+const lastname = 'Smith';
 
 // number. The value is recognised as a number because it is not wrapped in quotation marks. 
 const players = 8;
@@ -95,3 +95,77 @@ console.log(s.split(""));
 // In the below example the argument in the parentheses is saying to splut the string into an array each time there is a ", " (comma space) which acts as the separator so the individual words get returned. 
 const tech = "technology, computers, IT";
 console.log(tech.split(", "));
+
+// Arrays - variables that hold multiple values. Various ways of making arrays. 
+
+// method 1 - Array constructor
+
+const numbers = new Array(1,2,3,4,5);
+
+console.log (numbers);
+
+const fruits = ['apples', 'oranges', 'pears'];
+
+console.log (fruits);
+
+// Accessing a value in the array. 
+// data is always zero based so to get Oranges enter 1 in the square brackets. 0 would have returned apples.
+
+console.log(fruits[1]);
+
+// change data to an array.
+// use the square brackets to specify the number of the array data that is being changed. 
+fruits[3] = 'grapes';
+console.log (fruits);
+
+// Use push to add a value to the array in the next available set of data. 
+fruits.push('mangos');
+console.log(fruits);
+
+// add a value to the beginning. 
+fruits.unshift('strawberries');
+console.log(fruits)
+
+// remove the last value.
+fruits.pop();
+console.log(fruits);
+
+// Check if a variable is an array. Fruits returns True. S was a string so returns false.
+console.log(Array.isArray(fruits));
+console.log(Array.isArray(s));
+
+//Check the index value of a peice of data in an array. Index value is what sequence that piece of data is in the array.
+console.log(fruits.indexOf('oranges'));
+
+// Object Literals. These are value pairs. 
+const person = {
+  firstname:'John',
+  lastname:'Smith',
+  age:60,
+  hobbies:['music', 'movies', 'sports'],
+  address: {
+    street: '50 main st',
+    city:'Boston',
+    state: 'MA'
+  }
+}
+console.log(person)
+
+//Return a value from the object literal. 
+console.log(person.lastname);
+// Return multiple values
+console.log(person.firstname, person.lastname)
+//return a value from an object literal within an object literal.
+console.log(person.address.city)
+//return a vaulue from an array within an object literal. 
+console.log(person.hobbies[1])
+
+// convert the values to variables.
+
+const {firstname, surname} = person
+//first name and surname are now considered variables. 
+console.log(firstname)
+//This also works for values within an object literal within an object literal. 
+const {address: {city}}=person;
+console.log(city);
+
