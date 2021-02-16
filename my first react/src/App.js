@@ -1,5 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
+// Josh Tutorial start
+import Header from "./components/Header/Header";
+// Josh tutorial end. 
+
 
 function App() {
   return (
@@ -18,6 +22,10 @@ function App() {
           Learn React
         </a>
       </header>
+
+      <Header/>
+      {/* self close components using the "/" at the end of the component unless the componet is going to accept things inside it.*/}
+
     </div>
   );
 }
