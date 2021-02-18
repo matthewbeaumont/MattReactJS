@@ -1,6 +1,6 @@
 import React from "react";
 
-import Logo from "../../Images/DXC.png";
+import Logo from "../../../../Images/DXC.png";
 
 function DXClogo() {
   return (
