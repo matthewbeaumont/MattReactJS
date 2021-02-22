@@ -2,8 +2,13 @@
 
 // import React from "react" allows the code below this to make use of react JavaScript libraries and recognise the code as using react syntax. note that "react" isn't give a filepath. In cases where a filepath isn't specified it will be assumed that it is imported from the node modules folder containing the javascript packages.
 import React from "react";
+import FirstProps from "./FirstProps/FirstProps.component";
+import SecondProps from "./SecondProps/SecondProps.component";
 // in this component I need to import another component "Header2" that I nested inside the "Header" component.
-import Header2 from "./Header2/Header2.component";
+// import Header2 from "./Header2/Header2.component";
+
+// Using an index.js file to manage the import of components.
+import { Header2, Text } from "./index";
 
 // The below "Header" needs to be capitalised to make sure it is recognised as a component. Line 7 is the component. For good practice we use one component per file. It can be possible to have multiple components in a file.
 export default function Header() {
@@ -21,6 +26,11 @@ export default function Header() {
         Header 1 heading{" "}
       </h1>
       <Header2 />
+      <Text />
+      {/* First use of props is below using the traditional method. */}
+      <FirstProps fruit="apple" veg="potato" />
+
+      <SecondProps sport="Badminton" dessert="Ice cream" />
     </>
   );
 }
