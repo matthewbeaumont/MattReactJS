@@ -1,6 +1,7 @@
 import React from "react";
 // The ReactDOM has to be imported into this index.js file because it will be needed below.
 import ReactDOM from "react-dom";
+// The below imported styleshset effects the whole site because it is imported into the highest level.
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";

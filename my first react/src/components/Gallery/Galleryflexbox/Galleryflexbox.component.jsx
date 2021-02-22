@@ -1,5 +1,8 @@
 import React from "react";
 
+// Styled Components importin the elements file.
+import { Container } from "./Galleryflexbox elements";
+
 // import the image components
 import DXClogo from "./ImageJPG/DXClogo.component";
 import Doctor from "./ImagePNG/Welcomeimage.component";
@@ -11,16 +14,22 @@ export default function Galleryflexbox() {
   return (
     <>
       <h1>Gallery</h1>
-      <div>
-        <DXClogo />
+      <Container>
+        <div>
+          <span>Example of a .png image</span>
+          <DXClogo />
 
-        <Doctor />
+          <span>Example of a .jpg image</span>
+          <Doctor />
 
-        <Icon />
+          <span>Example of an SVG image within a component</span>
+          <Icon />
 
-        <ImageTwo />
-        <LadybirdSVG />
-      </div>
+          <span> examples of SVGs imported into a component. </span>
+          <ImageTwo />
+          <LadybirdSVG />
+        </div>
+      </Container>
     </>
   );
 }

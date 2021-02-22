@@ -1,0 +1,10 @@
+/* styling I added for Header 2 example of using a stylesheet.  */
+p {
+  background-color: crimson;
+  border-bottom: solid black;
+}
+
+.headingstyle {
+  border: solid red;
+  color: royalblue;
+}

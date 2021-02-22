@@ -10,11 +10,21 @@ export default function Header() {
   return (
     //  enter HTML here.There can only be one parent element in a react component. Wrap them in a div or a react fragment "<> </>" "<React.Fragment> </React.Fragment>" (long one is used for assigning unique properties to be discussed later)  It is best to use react fragments as this wrapping is their only purpose while react fragments are only used to hold things and do not themselves have properties.
     <>
-      <h1>Header 1 heading </h1>
+      <h1
+        // Example of inline sytling in JSX.
+        style={{
+          backgroundColor: "blue",
+          fontFamily: "algerian",
+          color: "green",
+        }}
+      >
+        Header 1 heading{" "}
+      </h1>
       <Header2 />
     </>
   );
 }
 // functional component called header created.
+
 // export default Header;
-// export deafult followed by the component name means that unless the request specifies something specific it will export the Header component otehriwse it would import everything. Without the export method the componet cannot be used outside of the file.
+// the above export deafult followed by the component name means that unless the request specifies something specific it will export the Header component otehriwse it would import everything. Without the export method the componet cannot be used outside of the file. The better way of doing the export is by adding export default before the function as has been done above.
