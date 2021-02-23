@@ -8,7 +8,7 @@ import image1 from "../../../../Images/doctor.jpg";
 function Doctor() {
   return (
     <>
-      <img src={image1} alt="logo picture" />
+      <img src={image1} alt="logo picture" style={{ width: "300px" }} />
     </>
   );
 }

@@ -7,7 +7,7 @@ import { ReactComponent as Ladybird } from "../../../../Images/ladybug.svg";
 function LadybirdSVG() {
   return (
     <>
-      <Ladybird />
+      <Ladybird style={{ width: "300px", height: "300px" }} />
     </>
   );
 }

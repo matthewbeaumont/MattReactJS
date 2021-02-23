@@ -3,12 +3,15 @@ import React from "react";
 // Styled Components importin the elements file.
 import { Container } from "./Galleryflexbox elements";
 
-// import the image components
-import DXClogo from "./ImageJPG/DXClogo.component";
-import Doctor from "./ImagePNG/Welcomeimage.component";
-import Icon from "./ImageSVG/Redbutton.component";
-import ImageTwo from "./ImageSVGImport/ImageTwo.component";
-import LadybirdSVG from "./ImageSVGImport/Ladybird.component";
+// import the image components from the index.js file.
+import { Logo, Doctor, Icon, ImageTwo, LadybirdSVG } from "../../";
+
+// Old style of importing components.
+// import Logo from "./ImageJPG/DXClogo.component";
+// import Doctor from "./ImagePNG/Welcomeimage.component";
+// import Icon from "./ImageSVG/Redbutton.component";
+// import ImageTwo from "./ImageSVGImport/ImageTwo.component";
+// import LadybirdSVG from "./ImageSVGImport/Ladybird.component";
 
 export default function Galleryflexbox() {
   return (
@@ -16,16 +19,16 @@ export default function Galleryflexbox() {
       <h1>Gallery</h1>
       <Container>
         <div>
-          <span>Example of a .png image</span>
-          <DXClogo />
+          <p className="redpara">Example of a .png image</p>
+          <Logo />
 
-          <span>Example of a .jpg image</span>
+          <p className="redpara">Example of a .jpg image</p>
           <Doctor />
 
-          <span>Example of an SVG image within a component</span>
+          <p className="redpara">Example of an SVG image within a component</p>
           <Icon />
 
-          <span> examples of SVGs imported into a component. </span>
+          <p className="redpara">Examples of SVGs imported into a component.</p>
           <ImageTwo />
           <LadybirdSVG />
         </div>

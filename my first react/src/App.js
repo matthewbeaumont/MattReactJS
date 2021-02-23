@@ -1,8 +1,9 @@
 import logo from "./logo.svg";
 import "./App.css";
 // Below are the components that I am importing into the main app.js component.
-import Header from "./components/Header/Header1/Header1.component";
-import Galleryflexbox from "./components/Gallery/Galleryflexbox/Galleryflexbox.component";
+import { Header, Galleryflexbox, PropsContainer } from "./components";
+
+// Below is the old way of importing components from theri actual folder location rather than via the index.js file.
 // import Welcomeimage from "./components/Header/Welcomeimage";
 // import ImageTwo from "./components/Header/ImageTwo";
 
@@ -32,6 +33,8 @@ export default function App() {
       {/* <Welcomeimage />
       <ImageTwo /> */}
       <Galleryflexbox />
+
+      <PropsContainer drink="wine" />
     </>
   );
 }

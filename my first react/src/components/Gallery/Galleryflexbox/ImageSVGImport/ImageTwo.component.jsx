@@ -9,7 +9,7 @@ import { ReactComponent as Logo } from "../../../../logo.svg";
 function ImageTwo() {
   return (
     <>
-      <Logo />
+      <Logo style={{ width: "300px" }} />
     </>
   );
 }

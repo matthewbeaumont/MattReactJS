@@ -1,5 +1,7 @@
 /* styling I added for Header 2 example of using a stylesheet.  */
-p {
+
+/* Note that it doesn't maatter what component imported the stylesheet becasue the stylesheet is applied to every component in the app. In this case I use the .redpara class in the Galleryflexbox.component.jsx component and the .headingstyle class in the Header2.component.jsx component.  */
+.redpara {
   background-color: crimson;
   border-bottom: solid black;
 }
