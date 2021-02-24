@@ -5,7 +5,6 @@ export default function FirstProps(props) {
     <>
       <span>{props.fruit}</span>
       <span>{props.veg}</span>
-      <span>{props.sport}</span>
     </>
   );
 }

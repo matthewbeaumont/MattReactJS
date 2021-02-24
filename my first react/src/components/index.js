@@ -27,3 +27,9 @@ export { default as FirstProps } from "./PropsContainer/FirstProps/FirstProps.co
 export { default as SecondProps } from "./PropsContainer/SecondProps/SecondProps.component";
 
 export { default as PropsB } from "./PropsContainer/PropsB.component.jsx/PropsB.component";
+
+export { default as DarkLord } from "./PropsContainer/DarkLord.component/DarkLord.component";
+
+export { default as Minion } from "./PropsContainer/DarkLord.component/Minion.component/Minion.component";
+
+export { default as Pet } from "./PropsContainer/DarkLord.component/Minion.component/Pet.component/Pet.component";
