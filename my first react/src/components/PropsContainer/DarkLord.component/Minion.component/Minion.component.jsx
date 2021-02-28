@@ -12,7 +12,6 @@ export default function Minion({
   return (
     <>
       <p>
-        {" "}
         My name is {minionname}. I have a {minionwand} wand. I wear my{" "}
         {minioncloak} cloak to keep warm. I have a {pettype} called {petname}.
       </p>

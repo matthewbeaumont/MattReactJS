@@ -33,3 +33,19 @@ export { default as DarkLord } from "./PropsContainer/DarkLord.component/DarkLor
 export { default as Minion } from "./PropsContainer/DarkLord.component/Minion.component/Minion.component";
 
 export { default as Pet } from "./PropsContainer/DarkLord.component/Minion.component/Pet.component/Pet.component";
+
+// Children
+
+export { default as Children } from "./Children/Children.component";
+
+export { default as Child1 } from "./Children//Child1.component/Child1.component";
+
+export { default as Child2 } from "./Children/Child1.component/Child2.component/Child2.component";
+
+export { default as Child1friend } from "./Children/Child1.component/Child1friend.component";
+
+// Conditionals
+
+export { default as Conditionals } from "./Conditionals/Conditionals.component";
+
+export { default as TernaryOperator } from "./Conditionals/TernaryOperator/TernaryOperator.component";

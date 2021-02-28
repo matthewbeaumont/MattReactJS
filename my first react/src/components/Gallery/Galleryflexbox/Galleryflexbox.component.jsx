@@ -4,7 +4,7 @@ import React from "react";
 import { Container } from "./Galleryflexbox elements";
 
 // import the image components from the index.js file.
-import { Logo, Doctor, Icon, ImageTwo, LadybirdSVG } from "../../";
+import { Logo, Doctor, Icon, ImageTwo, LadybirdSVG } from "../../index";
 
 // Old style of importing components.
 // import Logo from "./ImageJPG/DXClogo.component";
