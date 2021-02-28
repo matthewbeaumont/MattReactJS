@@ -1,0 +1,8 @@
+/* In the CSS sheet the styling follows normal CSS format and does not need to confrom to JSX. */
+
+h1 {
+  background-color: blue;
+}
+p {
+  font-family: algerian;
+}
