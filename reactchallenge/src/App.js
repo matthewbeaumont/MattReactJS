@@ -1,10 +1,14 @@
+import React from "react";
+
 import "./App.css";
+
+import { Header } from "./Components/index";
 
 export default function App() {
   return (
     <>
-      <h1>Heading</h1>
-      <p>FIrst Paragraph.</p>
+      <Header />
+      <p>First Paragraph.</p>
       <p>Paragraph 2.</p>
     </>
   );
