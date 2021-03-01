@@ -1,8 +1,8 @@
-/* In the CSS sheet the styling follows normal CSS format and does not need to confrom to JSX. */
+/* In the CSS sheet the styling follows normal CSS format and does not need to confrom to JSX syntax. */
 
-h1 {
-  background-color: blue;
-}
-p {
-  font-family: algerian;
+* {
+  margin: 0px;
+  padding: 0px;
+  border: 0px none;
+  font-family: Helvetica, Arial;
 }
