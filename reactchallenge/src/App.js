@@ -9,8 +9,9 @@ export default function App() {
   return (
     <>
       <Header />
-      <p>First Paragraph.</p>
-      <p>Paragraph 2.</p>
+      <p>Add an example of children.</p>
+      <p>Add an example of props inherited accross several components.</p>
+      <p>Add an example of a ternary operator.</p>
     </>
   );
 }

@@ -8,18 +8,16 @@ export default function Header() {
   return (
     <>
       <Container>
-        <div>
-          {/* image logo. */}
-          <MainLogo />
-          {/* horizontal list of buttons */}
-          <ul>
-            <li>Home</li>
-            <li>Products</li>
-            <li>Support</li>
-          </ul>
-          {/* username component */}
-          <Username />
-        </div>
+        <MainLogo />
+
+        {/* horizontal list of buttons */}
+        <ul>
+          <li>Home</li>
+          <li>Products</li>
+          <li>Support</li>
+        </ul>
+
+        <Username UserID="Matthew Beaumont" UserNumber={12345} Location="WFH" />
       </Container>
     </>
   );

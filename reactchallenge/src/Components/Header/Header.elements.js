@@ -1,22 +1,31 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  /* width: 100%; */
+  /* Always follow the styled. with "div" the Container element added to the component actas as a div so it gets the properties given to styled.div */
   background-color: black;
   display: flex;
   flex-direction: horizontal;
+  justify-content: space-between;
   & ul {
     font-size: 20px;
     display: flex;
     flex-direction: horizontal;
+    justify-content: center;
+    align-items: center;
     list-style-type: none;
     & li {
+      display: flex;
       background-color: cyan;
       padding: 20px;
       margin: 5px;
       border: solid 2px red;
       min-width: 100px;
-      text-align: center;
+      justify-content: center;
+      align-items: center;
+      transition: 0.5s;
+    }
+    & li:hover {
+      background-color: green;
     }
   }
 `;
