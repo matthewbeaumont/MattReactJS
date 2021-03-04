@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components/macro";
 
 export const Container = styled.div`
   /* Always follow the styled. with "div" the Container element added to the component actas as a div so it gets the properties given to styled.div */

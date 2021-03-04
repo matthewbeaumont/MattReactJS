@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Child1({ children, property1 }) {
+export default function Child1() {
   return (
     <>
       <p style={{ backgroundColor: "red", height: "50px" }}>Child1 sentence</p>
