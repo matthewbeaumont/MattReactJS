@@ -1,15 +1,23 @@
 import React, { useState } from "react";
 
-import { DrugA, DrugB, DrugC } from "../index";
-
+// Images
 import drugAimage from "../../Images/drugAimage.jpg";
 import drugBimage from "../../Images/drugBimage.jpg";
 import drugCimage from "../../Images/drugCimage.jpg";
+import lightMode from "../../Images/sunny.png";
+import darkMode from "../../Images/moon.png";
 
-import { ContainerLight } from "./OrderScreenLight.elements";
+// Elements file
+import { Container } from "./OrderScreen.elements";
 
+// Component
 export default function OrderScreen() {
+  // Light/Dark mode variable
+  const [lightDarkMode, setlightDarkMode] = useState(true);
+
+  // Drug image variable
   const [drugSelected, setdrugSelected] = useState(null);
+
   return (
     <>
       {/* Add an order screen. On the left will be 3 radio buttons. When a button
@@ -17,13 +25,24 @@ export default function OrderScreen() {
       is clicked the drug name will appear on the right in a list called Ordered
       meds. There will be a button that changes the components elements file so
       it can switch between light mode and dark mode. */}
-      <ContainerLight>
+
+      <Container lightDarkMode={lightDarkMode}>
         <h1>Order Screen</h1>
+
         {/* Light mode dark mode button */}
+        <button
+          onClick={() => setlightDarkMode((lightDarkMode) => !lightDarkMode)}
+        >
+          <img
+            src={lightDarkMode ? darkMode : lightMode}
+            alt="Light/Dark mode"
+          />
+        </button>
+
         <div className="orderingGrid">
           <div>
-            {/* Add the radio buttons here. Type determines it is a radio button, name is the name of the group of radio buttons to show they are related, value is the value teh radio button sends when clicked. */}
-            {/* Add a state to the component to enable the component to know if the drug has been selected. value changes to drug A B or C. The src for the image would be a 3 times terminator if a is selected show a, if b is selcetd show b.  */}
+            {/* Add the radio buttons here. Type determines it is a radio button, name is the name of the group of radio buttons to show they are related, value is the value the radio button sends when clicked. */}
+            {/* Add a state to the component which will become equal to the src value for theimage of the drug following an onClick event. */}
             <input
               type="radio"
               name="drug"
@@ -54,11 +73,11 @@ export default function OrderScreen() {
               alt="no drug selected"
               style={{ width: "200px", border: "solid black 2px" }}
             />
-            {/* <DrugA /> */}
           </div>
           {/* <div> Add the order list here.</div> */}
         </div>
-      </ContainerLight>
+      </Container>
+      {/* </{lightDarkMode ? ContainerLight : ContainerDark} > */}
     </>
   );
 }

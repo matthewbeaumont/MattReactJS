@@ -22,7 +22,3 @@ export { default as PatientPhoto } from "./PatientSelector/PatientInfo/PatientPh
 
 // OrderScreen
 export { default as OrderScreen } from "./OrderScreen/OrderScreen.component";
-
-export { default as DrugA } from "./OrderScreen/DrugViewer/DrugA.component";
-export { default as DrugB } from "./OrderScreen/DrugViewer/DrugB.component";
-export { default as DrugC } from "./OrderScreen/DrugViewer/DrugC.component";
