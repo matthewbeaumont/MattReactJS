@@ -17,3 +17,12 @@ export { default as Child2 } from "./Children/Child2/Child2.component";
 export { default as PatientSelector } from "./PatientSelector/PatientSelector.component";
 
 export { default as PatientInfo } from "./PatientSelector/PatientInfo/PatientInfo.component";
+
+export { default as PatientPhoto } from "./PatientSelector/PatientInfo/PatientPhoto.component";
+
+// OrderScreen
+export { default as OrderScreen } from "./OrderScreen/OrderScreen.component";
+
+export { default as DrugA } from "./OrderScreen/DrugViewer/DrugA.component";
+export { default as DrugB } from "./OrderScreen/DrugViewer/DrugB.component";
+export { default as DrugC } from "./OrderScreen/DrugViewer/DrugC.component";

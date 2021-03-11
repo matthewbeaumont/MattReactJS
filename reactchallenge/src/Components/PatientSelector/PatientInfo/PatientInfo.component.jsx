@@ -2,13 +2,18 @@ import React from "react";
 
 import { Container } from "./PatientInfo.elements";
 
+// Add data here
+
 export default function PatientSelector({
   firstName,
   surname,
+  patientPhoto,
   injury,
   waitTime,
   nhsOrPrivate,
 }) {
+  // Add data here
+
   return (
     <>
       <Container>
@@ -21,6 +26,10 @@ export default function PatientSelector({
           <tr>
             <th>Surname</th>
             <td>{surname}</td>
+          </tr>
+          <tr>
+            <th>Photo</th>
+            <td>{patientPhoto}</td>
           </tr>
           <tr>
             <th>Injury</th>

@@ -9,6 +9,7 @@ import {
   Child1,
   Child2,
   PatientSelector,
+  OrderScreen,
 } from "./Components/index";
 
 export default function App() {
@@ -23,6 +24,8 @@ export default function App() {
       <PatientSelector />
       <p>Add an example of props inherited accross several components.</p>
       <p>Add an example of a ternary operator.</p>
+      <p>Add an example of a component being passed down as a prop.</p>
+      <OrderScreen />
     </>
   );
 }
