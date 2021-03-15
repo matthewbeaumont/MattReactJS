@@ -16,12 +16,29 @@ import {
 export default function App() {
   const [hospitalList, setHospitalList] = useState(true);
 
+  // pass the hospital list down as props to the hospital list component. teh fucntion "sethospital list" alos needs to be passed as a prop.
+
   return (
     <>
-      {hospitalList ? null : <HospitalList />}
+      {hospitalList ? null : (
+        <HospitalList
+          setHospitalList={setHospitalList}
+          hospitallist={hospitalList}
+        />
+      )}
 
-      <button onClick={() => setHospitalList((hosiptalList) => !hospitalList)}>
-        Hospital List
+      <button
+        onClick={() => setHospitalList((hosiptalList) => !hospitalList)}
+        style={{
+          padding: "5px",
+          backgroundColor: "red",
+          float: "left",
+          height: "121px",
+          width: "80px",
+          border: "1px solid black",
+        }}
+      >
+        <b>Hospital List</b>
       </button>
       <Header />
 

@@ -2,28 +2,25 @@
 // Find a way to get rid of the slideout. can there be a button in the component that closes itself. How do I see how this was done in the OneED site?
 // Sort out the builsing SVG.
 
-import React, { useState } from "react";
+import React from "react";
 
 import { HospitalEntry } from "../index";
 
 import { Container } from "./HospitalList.elements";
 
-export default function HospitalList() {
-  const [closeHospitalList, setCloseHospitalList] = useState(true);
+export default function HospitalList({ hospitalList, setHospitalList }) {
   return (
     // A header with a close button and a title
     // A series of components for Hospitals with: an icon, hospital name, Opening time, capacity, Accepts major trauma
     <>
-      <Container listClose={closeHospitalList}>
+      <Container>
         <div className="stickyheader">
           <button
-            onClick={() =>
-              setCloseHospitalList((closeHospitalList) => !closeHospitalList)
-            }
+            onClick={() => setHospitalList((hospitalList) => !hospitalList)}
           >
             Click to close
           </button>
-          <h3>Hospital List</h3>
+          <h3 className="hospitallistheading">Hospital List</h3>
         </div>
         <HospitalEntry
           rlName="Manchester Royal"
@@ -50,7 +47,7 @@ export default function HospitalList() {
           journeyTime="45"
         />
         <HospitalEntry
-          rlName="Birmingham General"
+          rlName="Birmingham Ceneral"
           aande="No"
           status="Amber"
           journeyTime="10"
