@@ -6,6 +6,11 @@ export { default as Username } from "./Header/Username/Username.component";
 // Image components
 export { default as MainLogo } from "./ImportedImageComponents/MainLogo.component";
 
+// Hospital List
+export { default as HospitalList } from "./HospitalList/HospitalList.component";
+
+export { default as HospitalEntry } from "./HospitalList/HospitalEntry/HospitalEntry.components";
+
 // Children examples
 export { default as Children } from "./Children/Children.component";
 

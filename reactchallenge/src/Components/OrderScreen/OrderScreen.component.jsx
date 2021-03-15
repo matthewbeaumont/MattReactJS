@@ -71,7 +71,12 @@ export default function OrderScreen() {
               id="drugImage"
               src={drugSelected}
               alt="no drug selected"
-              style={{ width: "200px", border: "solid black 2px" }}
+              style={{
+                width: "200px",
+                border: "solid black 2px",
+                backgroundColor: "white",
+                color: "black",
+              }}
             />
           </div>
           {/* <div> Add the order list here.</div> */}
