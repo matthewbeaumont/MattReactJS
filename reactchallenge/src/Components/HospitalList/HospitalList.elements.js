@@ -14,6 +14,11 @@ export const Container = styled.div`
   background-color: rgb(45 45 46);
   overflow: scroll;
 
+  /* At 720px the width of the component becomes 100% rather than 500px */
+  @media only screen and (max-width: 720px) {
+    width: 100%;
+  }
+
   .stickyheader {
     position: sticky;
     top: 0;
