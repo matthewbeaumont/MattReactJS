@@ -38,20 +38,40 @@
   <h2>Different Javascript outputs</h2>
   <ol>
     <li>Write into an HTML element.</li>
+    <button
+      type="button"
+      onClick="document.getElementById('hahaha').innerHTML='to get to the other side'"
+    >
+      Click to change the paragraph below
+    </button>
+    <p id="hahaha">why did the chicken cross the road?</p>
     <li>Write into the HTML output.</li>
+    <script>
+      document.write(5 + 20);
+    </script>
+    <button
+      type="button"
+      onclick="document.write('Web page overwritten. Refresh to restore page')"
+    >
+      click and the document.write feature will overwrite the webpage.
+    </button>
+    <!-- The button above for document write required the id and string to be in single quotes. -->
+    <!-- Double quotes caused an error because they sit is the same hierachy level as the double quotes that surround the script. -->
+
     <li>write into an alert box.</li>
     <button type="buton" onclick="function3()">click me</button>
     <li>Write into the browser console.</li>
     <p>
       Open the developer tools in the browser to see a message "hello world" in
       the Console section of the tools. This message is added by Javascript.
-      console.log ("hello world")
+      console.log ("hello World")
     </p>
   </ol>
 
   <footer>
     <script src="Javascript/javascript1.js" ;></script>
-    <!-- The filepath is foldername forward slash file name. If the foler was one level back I would need to write ../ before the folder name and repeat that for every level back I need to go. -->
+    <!-- The filepath is foldername forward slash file name. If the folder was one level back I would need to write ../ 
+      before the folder name and repeat that for every level back I need to go. All the JavaScript within the extenal file is available. -->
     <!-- The benefit of having the script in the footer is that it is the last thing to load and Javascript can slow down load times.  -->
   </footer>
 </body>
