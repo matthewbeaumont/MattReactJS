@@ -63,11 +63,28 @@
     <li>Write into the browser console.</li>
     <p>
       Open the developer tools in the browser to see a message "hello world" in
-      the Console section of the tools. This message is added by Javascript.
+      the Console section of the dev tools. This message is added by Javascript.
       console.log ("hello World")
     </p>
   </ol>
 
+  <h2>JavaScript Statements</h2>
+
+  <p>
+    A <b>JavaScript program</b> is a list of <b>statements</b> to be executed by
+    a computer.
+  </p>
+
+  <p id="demo"></p>
+
+  <script>
+    var x, y, z; // Statement 1
+    x = 5; // Statement 2
+    y = 6; // Statement 3
+    z = x + y; // Statement 4
+
+    document.getElementById("demo").innerHTML = "The value of z is " + z + ".";
+  </script>
   <footer>
     <script src="Javascript/javascript1.js" ;></script>
     <!-- The filepath is foldername forward slash file name. If the folder was one level back I would need to write ../ 
